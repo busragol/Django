@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+        <form method="POST">{#girilen bilgilerin adres çubuğunda gözükmemesi için#}
+      <h1>Kullanıcı Kayıt Ekranı</h1>
+            {%csrf_token%}
+             {% for list1 in ilçeler %}
+              {{list1.ilçe}}
+              {% endfor %}
+        <input type="submit" value="Gönder">
+    </form>
+
+</body>
+</html>
+
+
+
